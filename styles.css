@@ -766,7 +766,7 @@
   
     /* Corrigindo a imagem de fundo em dispositivos móveis */
     .hero {
-      background-attachment: fixed; /* Desativa o fixed para melhor desempenho em mobile */
+      background-attachment: scroll; /* Desativa o fixed para melhor desempenho em mobile */
       background-size: cover; /* Garante que a imagem cubra todo o espaço */
       background-position: 60% 0; /* Ajusta a posição da imagem para o centro */
     }

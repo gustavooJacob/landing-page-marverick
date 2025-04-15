@@ -188,7 +188,7 @@
   /* Hero Section */
   .hero {
     height: 100vh;
-    background-image: url("imagens/fundo2.jpg");
+    background-image: url("imagens/fundo.jpg");
     background-size: cover; /* Alterado para cover para melhor responsividade */
     background-position: center;
     background-repeat: no-repeat;
@@ -197,8 +197,9 @@
     display: flex;
     align-items: center;
     color: var(--off-white);
+    background-position: center center;
   }
-  
+
   .overlay {
     position: absolute;
     top: 0;
@@ -765,9 +766,9 @@
   
     /* Corrigindo a imagem de fundo em dispositivos móveis */
     .hero {
-      background-attachment: scroll; /* Desativa o fixed para melhor desempenho em mobile */
+      background-attachment: fixed; /* Desativa o fixed para melhor desempenho em mobile */
       background-size: cover; /* Garante que a imagem cubra todo o espaço */
-      background-position: center; /* Centraliza a imagem */
+      background-position: 60% 20%;
     }
   }
   

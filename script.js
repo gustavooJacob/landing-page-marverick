@@ -77,41 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
       currentSlide = (currentSlide + 1) % slides.length
       showSlide(currentSlide)
     }, 5000)
-  
-    // Registration modal
-    const modal = document.getElementById("registrationModal")
-    const openModalBtn = document.getElementById("openModal")
-    const closeModalBtn = document.querySelector(".close-modal")
-    const eventButtons = document.querySelectorAll(".event-button")
-  
-    if (openModalBtn) {
-      openModalBtn.addEventListener("click", () => {
-        modal.style.display = "block"
-        document.body.style.overflow = "hidden"
-      })
-    }
-  
-    if (closeModalBtn) {
-      closeModalBtn.addEventListener("click", () => {
-        modal.style.display = "none"
-        document.body.style.overflow = "auto"
-      })
-    }
-  
-    eventButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        modal.style.display = "block"
-        document.body.style.overflow = "hidden"
-      })
-    })
-  
-    window.addEventListener("click", (e) => {
-      if (e.target === modal) {
-        modal.style.display = "none"
-        document.body.style.overflow = "auto"
-      }
-    })
-  
+    
     // Form submission
     const contactForm = document.querySelector(".contact-form")
     const registrationForm = document.getElementById("registrationForm")

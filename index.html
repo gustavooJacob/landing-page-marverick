@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -45,7 +46,7 @@
                     LIDERANÇA
                 </h1>
                 <p class="event-description">Palestra inspiradora sobre liderança e virtude</p>
-                <button class="cta-button" id="openModal">REGISTRE-SE</button>
+                <button class="cta-button"> CONTATO</button>
             </div>
         </div>
     </section>
@@ -182,19 +183,16 @@
                         <h3>Redes Sociais</h3>
                         <div class="social-icons">
                             <a href="#" class="social-icon">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="social-icon">
                                 <i class="fab fa-instagram"></i>
                             </a>
                             <a href="#" class="social-icon">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="social-icon">
-                                <i class="fab fa-youtube"></i>
+                                <i class="fa-brands fa-x-twitter"></i>
                             </a>
                             <a href="#" class="social-icon">
                                 <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-tiktok"></i>
                             </a>
                         </div>
                     </div>
@@ -232,50 +230,11 @@
                         <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
-                <div class="footer-newsletter">
-                    <h3>Receba Novidades</h3>
-                    <div class="newsletter-form">
-                        <input type="email" placeholder="Seu melhor email">
-                        <button>→</button>
-                    </div>
-                </div>
-            </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Vanio Rodrigues. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Modal de Registro -->
-    <div id="registrationModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>REGISTRE-SE PARA A PALESTRA</h2>
-            <form id="registrationForm">
-                <div class="form-group">
-                    <input type="text" id="regName" placeholder="Nome completo" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="regEmail" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" id="regPhone" placeholder="Telefone" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="regCompany" placeholder="Empresa">
-                </div>
-                <div class="form-group">
-                    <select id="regEvent" required>
-                        <option value="" disabled selected>Selecione o evento</option>
-                        <option value="sp">São Paulo - 15/06</option>
-                        <option value="rj">Rio de Janeiro - 22/07</option>
-                        <option value="bh">Belo Horizonte - 10/08</option>
-                    </select>
-                </div>
-                <button type="submit" class="submit-button">CONFIRMAR INSCRIÇÃO</button>
-            </form>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>

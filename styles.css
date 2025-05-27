@@ -68,8 +68,7 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: transparent; /* Inicialmente transparente */
-    padding: 15px 0;
+    background-color: transparent;
     transition: all 0.3s ease;
   }
   
@@ -719,6 +718,14 @@
   
   /* Responsive Styles */
   @media (max-width: 992px) {
+    nav ul {
+      display: none;
+    }
+  
+    .menu-mobile {
+      display: flex;
+    }
+    
     .event-title {
       font-size: 3.5rem;
     }
@@ -738,14 +745,6 @@
   }
   
   @media (max-width: 768px) {
-    nav ul {
-      display: none;
-    }
-  
-    .menu-mobile {
-      display: flex;
-    }
-  
     .event-title {
       font-size: 3rem;
     }
@@ -764,11 +763,10 @@
       margin-bottom: 15px;
     }
   
-    /* Corrigindo a imagem de fundo em dispositivos móveis */
     .hero {
-      background-attachment: scroll; /* Desativa o fixed para melhor desempenho em mobile */
-      background-size: cover; /* Garante que a imagem cubra todo o espaço */
-      background-position: 60% 0; /* Ajusta a posição da imagem para o centro */
+      background-attachment: scroll;
+      background-size: cover;
+      background-position: 60% 0;
     }
   }
   
